@@ -1,3 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Test, coverage, and build artifacts
+htmlcov/
+.tox/
+.coverage
+.cache
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+
+# Data artifacts
+data/*.duckdb
+data/raw/
+data/staging/
+!data/.gitkeep
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Secrets and environment
 .env
+.env.*
+!.env.example
+
+# CSVs (except tracked docs)
+*.csv
+!docs/sources.csv
+
+# JSON sidecars for downloads
+data/raw/**/*.json
+
+# Ignore warehouse outputs
+warehouse/sql/*.db
+warehouse/sql/*.duckdb
+
+# Misc
+*.swp
+*.swo
+*.orig
 
